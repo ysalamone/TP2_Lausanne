@@ -34,7 +34,7 @@ ol, ul {
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-family: Flaticon;
-    font-size: 20px;
+    /*font-size: 20px;*/
     font-style: normal;
     margin-left: 20px;
 }
@@ -49,3 +49,36 @@ ol, ul {
 .flaticon-youtube:before { content: "\f107"; }
 .flaticon-linkedin:before { content: "\f108"; }
 
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-image: url("lausanne_img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #000a;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    /* centrer le titre dans le header */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    height: 20px;
+}
