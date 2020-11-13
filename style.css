@@ -68,11 +68,10 @@ h1 {
     height: 20px;
 }
 
-.iconesHeader {
-    display: flex;
-    align-items: center;
-}
-
 header a {
     padding: 20px;
+}
+
+.meteo, .reseaux_sociaux {
+    display: none;
 }
