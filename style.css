@@ -75,3 +75,27 @@ header a {
 .meteo, .reseaux_sociaux {
     display: none;
 }
+
+.liens {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+}
+
+.liens li {
+    background-color: #fff4;
+    padding-bottom: 1px;
+}
+
+.liens li a {
+    display: block;
+    padding: 20px;
+    background-color: #000a;
+    color: #fff;
+    font-size: 1.25em;
+}
