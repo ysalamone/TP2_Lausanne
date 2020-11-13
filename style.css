@@ -22,6 +22,10 @@ body {
 ol, ul {
     list-style: none;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* style de la page */
 html, body {
@@ -39,13 +43,13 @@ body {
 svg {
     width: 16px;
     height: 16px;
+    fill: currentColor;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     color: #fff;
     background-color: #000a;
 }
@@ -69,7 +73,6 @@ h1 {
     align-items: center;
 }
 
-.iconesHeader svg {
-    fill: #fff;
-    margin-left: 16px;
+header a {
+    padding: 20px;
 }
