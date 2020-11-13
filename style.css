@@ -33,7 +33,7 @@ html, body {
 }
 
 body {
-    background-image: url("lausanne_img.jpg");
+    background-image: url("lausanne_img_mobile.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
