@@ -76,6 +76,11 @@ header a {
     display: none;
 }
 
+.temp:before {
+    content: '|';
+    padding: 0 5px;
+}
+
 .liens {
     display: flex;
     flex-direction: column;
