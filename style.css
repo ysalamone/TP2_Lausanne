@@ -108,3 +108,62 @@ header a {
     color: #fff;
     font-size: 1.25em;
 }
+
+/* media query tablette */
+@media screen and (min-width: 768px) {
+
+    /* changement de l'image de fond */
+    body {
+        background-image: url("lausanne_img.jpg");
+    }
+
+    /* affichage de la météo et des réseaux sociaux */
+    .meteo, .reseaux_sociaux {
+        display: initial;
+    }
+
+    /* réglage de l'alignement de la météo */
+    .meteo svg, .meteo span {
+        vertical-align: top;
+    }
+
+    .reseaux_sociaux {
+        color: white;
+        /* centrer verticalement les réseaux sociaux dans la page */
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .reseaux_sociaux span {
+        display: none;
+    }
+
+    .reseaux_sociaux li a {
+        display: flex;
+        align-items: center;
+        background-color: #12435f;
+        width: fit-content;
+    }
+
+    .reseaux_sociaux svg {
+        background-color: #2c83c2;
+        width: 24px;
+        height: 24px;
+        padding: 16px;
+    }
+
+    .reseaux_sociaux span {
+        padding: 16px;
+        font-size: 1.25em;
+    }
+
+    .reseaux_sociaux svg:hover {
+        background-color: #12435f;
+    }
+
+    .reseaux_sociaux svg:hover ~ span {
+        display: initial;
+    }
+
+}
