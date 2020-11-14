@@ -81,15 +81,18 @@ header a {
     padding: 0 5px;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .liens {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
     width: 80%;
+    margin: 0 auto;
 }
 
 .liens li {
