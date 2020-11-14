@@ -50,6 +50,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
     color: #fff;
     background-color: #000a;
 }
@@ -64,25 +65,27 @@ h1 {
     transform: translateX(-50%);
 }
 
-.logo img {
-    height: 20px;
+header * {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 header a {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 header a:hover * {
     filter: drop-shadow(0 0 5px #fff);
 }
 
-.meteo, .reseaux_sociaux {
-    display: none;
+.logo img {
+    height: 20px;
 }
 
-.temp:before {
-    content: '|';
-    padding: 0 5px;
+/* cacher la météo et les réseaux sociaux en mobile */
+.meteo, .reseaux_sociaux {
+    display: none;
 }
 
 /* div nécessaire pour que les liens soient en bas de l'écran */
@@ -130,9 +133,12 @@ header a:hover * {
         display: initial;
     }
 
-    /* réglage de l'alignement de la météo */
-    .meteo svg, .meteo span {
-        vertical-align: top;
+    /* barre verticale entre le glyphe météo et la température */
+    .temp:before {
+        content: '|';
+        padding: 0 10px;
+        font-weight: 100;
+        font-size: 1.5em;
     }
 
     .reseaux_sociaux {
@@ -196,9 +202,6 @@ header a:hover * {
     svg {
         min-width: 20px;
         min-height: 20px;
-    }
-    .logo {
-        padding: 6px;
     }
     .logo img {
         height: 48px;
