@@ -72,6 +72,10 @@ header a {
     padding: 20px;
 }
 
+header a:hover * {
+    filter: drop-shadow(0 0 5px #fff);
+}
+
 .meteo, .reseaux_sociaux {
     display: none;
 }
@@ -107,6 +111,10 @@ header a {
     background-color: #000a;
     color: #fff;
     font-size: 1.25em;
+}
+
+.liens li a:hover {
+    background-color: #0008;
 }
 
 /* media query tablette */
