@@ -64,7 +64,7 @@ h1 {
     transform: translateX(-50%);
 }
 
-.logo {
+.logo img {
     height: 20px;
 }
 
@@ -182,6 +182,26 @@ header a:hover * {
     .liens li {
         width: 100%;
         padding: 0 1px 0 0;
+    }
+
+}
+
+/* media query desktop */
+@media screen and (min-width: 992px) {
+
+    /* agrandissement des polices et des glyphes */
+    body {
+        font-size: 120%;
+    }
+    svg {
+        min-width: 20px;
+        min-height: 20px;
+    }
+    .logo {
+        padding: 6px;
+    }
+    .logo img {
+        height: 48px;
     }
 
 }
