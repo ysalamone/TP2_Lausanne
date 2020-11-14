@@ -92,7 +92,7 @@ header a {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -164,6 +164,16 @@ header a {
 
     .reseaux_sociaux svg:hover ~ span {
         display: initial;
+    }
+
+    /* affichage des liens à l'horizontale */
+    .liens {
+        flex-direction: row;
+    }
+
+    .liens li {
+        width: 100%;
+        padding: 0 1px 0 0;
     }
 
 }
