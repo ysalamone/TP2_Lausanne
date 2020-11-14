@@ -81,7 +81,8 @@ header a {
     padding: 0 5px;
 }
 
-footer {
+/* div nécessaire pour que les liens soient en bas de l'écran */
+.container_liens {
     position: fixed;
     bottom: 0;
     width: 100%;
