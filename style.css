@@ -51,14 +51,12 @@ svg {
 }
 
 header {
-
     height: 70px;
     color: #fff;
     background-color: #000a;
 }
 
 header .inner_container {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
