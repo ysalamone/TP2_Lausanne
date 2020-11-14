@@ -172,10 +172,6 @@ header a:hover * {
         background-color: #12435f;
     }
 
-    .reseaux_sociaux svg:hover ~ span {
-        display: initial;
-    }
-
     /* affichage des liens à l'horizontale */
     .liens {
         flex-direction: row;
@@ -201,6 +197,11 @@ header a:hover * {
     }
     .logo img {
         height: 48px;
+    }
+
+    /* affichage des noms des réseaux sociaux à l'hover */
+    .reseaux_sociaux svg:hover ~ span {
+        display: initial;
     }
 
 }
