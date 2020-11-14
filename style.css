@@ -154,6 +154,7 @@ header a:hover * {
         align-items: center;
         background-color: #12435f;
         width: fit-content;
+        width: -moz-fit-content;
     }
 
     .reseaux_sociaux svg {
